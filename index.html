@@ -4,16 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/85493ca592.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Pizza Delight</title>
 </head>
 <body>
     <div class="container">
-        <nav>
-            <img src="images/pizza-logo.jpg" alt="welcome" height="200px">
-            <p>Taste or delightful pizza. There is variety for all!</p>
-        </nav>
+    <nav class="navbar navbar-light bg-light" class="row col-md-12" >
+        <a class="navbar-brand" href="#">
+            <img src="images/pizza-logo.jpg" width="150" height="150"  alt="little pizza">
+            <h2>Delicious, delightful pizza</h2>
+        </a>
+    </nav>
+    <div class="row ">
+        <div class="col-md-4 col-sm-12">
+            <h3>Crust</h3>
+            <img src="images/chickenPizza.jpg" alt="Crusty crust">
+            <select class="form-control size">
+                <option label="Stuffed" value="Ksh 500">Small</option>
+                <option label="Gluten-free" value="" >Gluten-free</option>
+                <option label="Cheese-filled" value="Ksh 750">Cheese filled</option>
+                <option label="Crunchy-thin" value="ksh 1050">Crunchy-thin</option>
+                <option label="Neopolitan/thick"value="">Neopolitan/Thick</option>
+            </select>
+            <h3>Topping </h3>
+            <img src="images/anotherTopping.jpg" alt="Delicious">
+            <select class="form-control size">
+                <option label="Cheese" value="Ksh 60">Cheese</option>
+                <option label="Fresh veggie" value="Ksh 50">Fresh Veggie</option>
+                <option label="Chicken" value="ksh 100">Chicken</option>
+                <option label="Pepperoni" value="70">Pepperoni</option>
+            </select>
+            <h3>Pizza size </h3>
+            <img src="images/pizza1.jpg" alt="variety">
+            <select class="form-control size">
+                <option label="Regular" value="Ksh 500">Regular</option>
+                <option label="Medium" value="Ksh 750">Medium</option>
+                <option label="Large" value="Ksh 1050">Large</option>
+                <option label="Mega" value="Ksh 1250">Mega</option>
+            </select>
         
-
+            <i class="fas fa-cart-plus">Add to cart</i>
+        </div>
     </div>
 </body>
 </html>
