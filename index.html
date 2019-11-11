@@ -10,23 +10,26 @@
     <title>Pizza Delight</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container container-fluid">
     <nav class="navbar navbar-light bg-light" class="row col-md-12" >
         <a class="navbar-brand" href="#">
             <img src="images/pizza-logo.jpg" width="150" height="150"  alt="little pizza">
             <h2>Delicious, delightful pizza</h2>
         </a>
     </nav>
-    <div class="row ">
+    <p class="welcome">Hello, pizza lover! Here is your place to make your order-a-pizza, the way you like it, dream come true. You are free to try any of our different tantalizing tastes. 
+        Your dreams come true on a silver platter, Lol :-) <br> <strong>Welcome!</strong>  
+    </p>
+    <div class="row " id="menus">
         <div class="col-md-4 col-sm-12">
             <h3>Crust</h3>
             <img src="images/chickenPizza.jpg" alt="Crusty crust">
             <select class="form-control size">
-                <option label="Stuffed" value="Ksh 500">Small</option>
-                <option label="Gluten-free" value="" >Gluten-free</option>
-                <option label="Cheese-filled" value="Ksh 750">Cheese filled</option>
-                <option label="Crunchy-thin" value="ksh 1050">Crunchy-thin</option>
-                <option label="Neopolitan/thick"value="">Neopolitan/Thick</option>
+                <option label="Stuffed" value="Ksh 100">Small</option>
+                <option label="Gluten-free" value="Ksh80" >Gluten-free</option>
+                <option label="Cheese-filled" value="Ksh 130">Cheese filled</option>
+                <option label="Crunchy-thin" value="ksh 100">Crunchy-thin</option>
+                <option label="Neopolitan/thick"value="Ksh 140">Neopolitan/Thick</option>
             </select>
             <h3>Topping </h3>
             <img src="images/anotherTopping.jpg" alt="Delicious">
@@ -43,10 +46,20 @@
                 <option label="Medium" value="Ksh 750">Medium</option>
                 <option label="Large" value="Ksh 1050">Large</option>
                 <option label="Mega" value="Ksh 1250">Mega</option>
-            </select>
-        
+            </select> &nbsp;&nbsp;
+
+            <div class="col-md-3">
+                <label for="quantity" style="color:black">Quantity</label>
+                <input class="form-control" type="text" name="pizza" id="quan" placeholder="0" max="" min="0">
+            </div><br><br><br><br><br><br>
+
+            <button class="btn btn-success mx-auto d-block submit" type="submit" id="submit2" onclick="getTotalAmount();"><strong>Checkout</strong></button>
+                  
             <i class="fas fa-cart-plus">Add to cart</i>
         </div>
     </div>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
