@@ -1,0 +1,14 @@
+body{
+    background-image:url(./images/veganPizza.jpg);
+}
+img {
+    border-radius: 100%;
+    margin-left: 40%;
+    width: 200px;
+    height: 200px;
+}
+#menus {
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+}
