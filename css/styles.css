@@ -1,6 +1,10 @@
 body{
     background-image:url(./images/veganPizza.jpg);
 }
+nav {
+    display: flex;
+    flex-direction: column;
+}
 img {
     border-radius: 100%;
     margin-left: 40%;
@@ -8,7 +12,19 @@ img {
     height: 200px;
 }
 #menus {
-    display: flex;
-    flex-direction:row;
-    justify-content: flex-start;
+    /* display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center; */
+}
+p {
+    font-family: 'Yeon Sung', cursive;
+    font-size:100%;
+}
+h2 {
+    font-family: 'Lakki Reddy', cursive;
+    size: 150%;
+}
+.container {
+    background-image:url(./images/veganPizza.jpg);
 }
