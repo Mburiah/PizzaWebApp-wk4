@@ -19,4 +19,5 @@ function getTotalAmount() {
     alert("You have Ordered" + getQuantity("")  +  " pizza."  +  ""  +  " The Total Amount is kshs "  +  (totalAmount)  +  ""  +  " Thank you for your order welcome again.");
     prompt("Enter your location")
     alert("You order will be delivered shortly.Thanks  for shopping with us. We are here for you everytime!")
+
 }
