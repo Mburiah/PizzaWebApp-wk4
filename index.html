@@ -7,6 +7,8 @@
     <script src="https://kit.fontawesome.com/85493ca592.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lakki+Reddy|Yeon+Sung&display=swap" rel="stylesheet">
+    
     <title>Pizza Delight</title>
 </head>
 <body>
@@ -21,42 +23,49 @@
         Your dreams come true on a silver platter, Lol :-) <br> <strong>Welcome!</strong>  
     </p>
     <div class="row " id="menus">
-        <div class="col-md-4 col-sm-12">
-            <h3>Crust</h3>
-            <img src="images/chickenPizza.jpg" alt="Crusty crust">
-            <select class="form-control size">
-                <option label="Stuffed" value="Ksh 100">Small</option>
-                <option label="Gluten-free" value="Ksh80" >Gluten-free</option>
-                <option label="Cheese-filled" value="Ksh 130">Cheese filled</option>
-                <option label="Crunchy-thin" value="ksh 100">Crunchy-thin</option>
-                <option label="Neopolitan/thick"value="Ksh 140">Neopolitan/Thick</option>
-            </select>
-            <h3>Topping </h3>
-            <img src="images/anotherTopping.jpg" alt="Delicious">
-            <select class="form-control size">
-                <option label="Cheese" value="Ksh 60">Cheese</option>
-                <option label="Fresh veggie" value="Ksh 50">Fresh Veggie</option>
-                <option label="Chicken" value="ksh 100">Chicken</option>
-                <option label="Pepperoni" value="70">Pepperoni</option>
-            </select>
-            <h3>Pizza size </h3>
-            <img src="images/pizza1.jpg" alt="variety">
-            <select class="form-control size">
-                <option label="Regular" value="Ksh 500">Regular</option>
-                <option label="Medium" value="Ksh 750">Medium</option>
-                <option label="Large" value="Ksh 1050">Large</option>
-                <option label="Mega" value="Ksh 1250">Mega</option>
-            </select> &nbsp;&nbsp;
-
-            <div class="col-md-3">
+        <div class="col-md-4 col-lg-4 col-sm-12">
+            <div id="crust">
+                <h3>Crust</h3>
+                <img src="images/chickenPizza.jpg" alt="Crusty crust">
+                <select class="form-control size">
+                    <option label="Stuffed" value="100">Small</option>
+                    <option label="Gluten-free" value="80" >Gluten-free</option>
+                    <option label="Cheese-filled" value="130">Cheese filled</option>
+                    <option label="Crunchy-thin" value="100">Crunchy-thin</option>
+                    <option label="Neopolitan/thick"value="140">Neopolitan/Thick</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-12">
+            <div id="topping">
+                <h3>Topping </h3>
+                <img src="images/anotherTopping.jpg" alt="Delicious">
+                <select class="form-control size">
+                    <option label="Cheese" value="60">Cheese</option>
+                    <option label="Fresh veggie" value="50">Fresh Veggie</option>
+                    <option label="Chicken" value="100">Chicken</option>
+                    <option label="Pepperoni" value="70">Pepperoni</option>
+                </select>
+            </div>
+        </div>  
+        <div class="col-md-4 col-lg-4 col-sm-12">
+            <div id="topping">
+                <h3>Size </h3>
+                <img src="images/pizza1.jpg" alt="variety">
+                <select class="form-control size">
+                    <option label="Regular" value="500">Regular</option>
+                    <option label="Medium" value="750">Medium</option>
+                    <option label="Large" value="1050">Large</option>
+                    <option label="Mega" value="1250">Mega</option>
+                </select> &nbsp;&nbsp;
+            </div>
+        </div>
+            <div class="col-md-3 col-sm-12 col-lg-4">
                 <label for="quantity" style="color:black">Quantity</label>
-                <input class="form-control" type="text" name="pizza" id="quan" placeholder="0" max="" min="0">
+                <input class="form-control" type="text" name="pizza" id="quantity" placeholder="0" max="" min="0">
             </div><br><br><br><br><br><br>
 
-            <button class="btn btn-success mx-auto d-block submit" type="submit" id="submit2" onclick="getTotalAmount();"><strong>Checkout</strong></button>
-                  
-            <i class="fas fa-cart-plus">Add to cart</i>
-        </div>
+            <button class="btn btn-success mx-auto d-block submit" type="submit" id="submit2" onclick="getTotalAmount();"><i class="fas fa-cart-plus"></i><strong>Checkout</strong></button>
     </div>
     <script src="js/scripts.js"></script>
     <script src="js/jquery-3.4.1.js"></script>
