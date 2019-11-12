@@ -8,7 +8,8 @@ This is a pizza order and delivery web app. It is a platform whereby customers c
 ## Requirements
 This web app requires internet connection.
  
-##  
+## 
+Mailchimp integration. 
  
 ## Technologies used.
 * HTML
