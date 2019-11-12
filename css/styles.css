@@ -1,25 +1,65 @@
-body{
-    background-image:url(../images/veganPizza.jpg);
-    size: 100%;
-    background-repeat: repeat-x;
-    background-position: center center;
+*{
+    font-family: 'Yeon Sung', cursive;
+    font-size:100%;
+ }
+html {
+    scroll-behavior: smooth;
+    
+  }
+
+.bg-custom {
+    background-color: #fff;
+}
+
+
+
+.bg-transparent {
+    background: transparent;
+}
+
+#about-us {
+    min-height: 300px;
+}
+
+.card {
+    border: none;
+}
+
+.card-footer {
+    background: none;
+}
+
+.divider {
+    border: solid red 3px;
+    width: 10%;
+}
+
+#delivery, #place-order, #show-now {
+    display: none;
+}
+
+.padding {
+    padding: 0 1.7rem 0 0.75rem;
+}
+
+.border {
+    border-radius: 15px;
+    border: red solid 1px !important;
 }
 nav {
     display: flex;
     flex-direction: column;
 }
-img {
+nav img {
     border-radius: 100%;
     margin-left: 40%;
     width: 200px;
     height: 200px;
 }
-#menus {
-    /*display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-content: center; */
+nav h2 {
+    color: black;
 }
+
 p {
     font-family: 'Yeon Sung', cursive;
     font-size:100%;
@@ -27,8 +67,4 @@ p {
 h2 {
     font-family: 'Lakki Reddy', cursive;
     size: 150%;
-}
-.jumbotron {
-    margin: auto;
-    padding: 30px;
 }
